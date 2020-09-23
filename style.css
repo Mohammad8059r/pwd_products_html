@@ -493,7 +493,7 @@ header {
 }
 
 .headerTitr {
-    font-size: 60px;
+    font-size: 50px;
     color: #ffffff;
     text-align: center;
     padding-bottom: 20px;
@@ -502,9 +502,9 @@ header {
 .headerButton a {
     background-color: #FF5D89;
     color: #ffffff;
-    padding: 15px 60px;
+    padding: 10px 50px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .headerButton {
@@ -537,6 +537,56 @@ section {
     width: 31%;
 }
 
+.productCont {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-shadow: 3px 0 3px 1px rgba(35, 62, 99, 0.3);
+    box-shadow: 3px 0 3px 1px rgba(35, 62, 99, 0.3);
+    border-radius: 20px;
+    margin-bottom: 10%;
+    background-color: #ffffff;
+}
+
+.picCont img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+.txtCont {
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.picCont a img {
+    width: 50px;
+    position: absolute;
+    left: 5rem;
+    bottom: 21rem;
+}
+
+.picCont h4 {
+    background-color: #FF5D89;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.txtCont h1 {
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.txtCont p {
+    font-size: 15px;
+}
 
 /*
 =========
@@ -610,7 +660,6 @@ End Footer
 ========
 */
 
-
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {
@@ -631,6 +680,10 @@ End Footer
 }
 
 @media (max-width: 992px) {
+    .picCont a img {
+        left: 7rem;
+    }
+
     .section1PlanetRight {
         top: 0;
     }
@@ -667,10 +720,20 @@ End Footer
     .sectionPlanetRight {
         display: none;
     }
+}
 
+@media (max-width: 768px) {
+    .picCont a img {
+        left: 6rem;
+    }
 }
 
 @media (max-width: 576px) {
+    .picCont a img {
+        left: 2rem;
+        bottom: 28rem;
+    }
+
     .footerPlanetBackground, .footerRocketBackground {
         display: none;
     }
